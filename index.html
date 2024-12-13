@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tracker">
+        <div class="container">
+            <h1>Expense Tracker</h1>
+
+            <div class="income-section">
+                <label for="income">Income:</label>
+                <input type="number" id="income" placeholder="Enter your current income">
+                <button id="income-button">Enter</button>
+            </div>
+
+            <div class="add-section">
+                <div class="item-add">
+                    <label for="date">Date: </label>
+                    <input type="date" id="date">
+                </div>
+
+
+                <div class="item-add">
+                    <label for="category">Method:</label>
+                    <select id="method" name="category">
+                        <option value="Cash">Cash</option>
+                        <option value="Debit">Debit</option>
+                        <option value="Credit">Credit</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="item-add">
+                    <label for="paid-to">Paid to:</label>
+                    <input type="text" id="paid-to">
+                </div>
+
+
+                <div class="item-add">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description">
+                </div>
+
+
+                <div class="item-add">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount">
+                </div>
+
+                <button id="button">Add</button>
+            </div>
+
+            <h3 id="total">TOTAL TO DATE: </h3>
+
+            <table id="table">
+                <thead>
+                  <tr>
+                    <th scope="col">DATE OF PAYMENT</th>
+                    <th scope="col">METHOD OF PAYMENT</th>
+                    <th scope="col">PAID TO</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">AMOUNT PAID $</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+
+              <div class="money-left">
+                <h3 id="leftover">MONEY LEFT: </h3>
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
